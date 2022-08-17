@@ -17,7 +17,8 @@ img {
   max-width: 100%;
 }
 
-button {
+.btn-start,
+.btn-stop {
   text-decoration: none;
   display: inline-block;
   width: 140px;
@@ -36,9 +37,36 @@ button {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
-button:hover {
+.btn-start:hover,
+.btn-stop {
   background: #2ee59d;
   box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
   color: white;
   transform: translateY(-7px);
+}
+
+.timer {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+  font-size: 42px;
+  text-align: center;
+}
+
+.label {
+  font-size: 22px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background: linear-gradient(to top, #55efcb 0%, #5bcaff 100%);
+  height: 100%;
 }
